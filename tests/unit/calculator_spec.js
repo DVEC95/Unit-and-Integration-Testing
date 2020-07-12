@@ -23,4 +23,10 @@ describe('calculator', function () {
     assert.equal(calculator.runningTotal, 3);
   });
 
+  it("it can multiply numbers", function(){
+    calculator.previousTotal = 3;
+    calculator.multiply(5);
+    assert.equal(calculator.runningTotal, 15);
+  });
+
 });
