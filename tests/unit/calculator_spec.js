@@ -47,4 +47,10 @@ describe('calculator', function () {
     assert.equal(calculator.newTotal, true);
   });
 
+  it("it can clear the running total", function(){
+    calculator.runningTotal = 7;
+    calculator.clearClick();
+    assert.equal(calculator.runningTotal, 0);
+  });
+
 });
