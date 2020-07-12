@@ -35,4 +35,10 @@ describe('calculator', function () {
     assert.equal(calculator.runningTotal, 3)
   });
 
+  it("it can concatenate numbers clicked", function(){
+    calculator.numberClick(9);
+    calculator.numberClick(5);
+    assert.equal(calculator.runningTotal, 95);
+  });
+
 });
