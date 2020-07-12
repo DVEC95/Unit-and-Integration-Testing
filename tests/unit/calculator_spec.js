@@ -29,4 +29,10 @@ describe('calculator', function () {
     assert.equal(calculator.runningTotal, 15);
   });
 
+  it("it can divide numbers", function(){
+    calculator.previousTotal = 21;
+    calculator.divide(7);
+    assert.equal(calculator.runningTotal, 3)
+  });
+
 });
