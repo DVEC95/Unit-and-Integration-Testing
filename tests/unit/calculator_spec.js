@@ -41,4 +41,10 @@ describe('calculator', function () {
     assert.equal(calculator.runningTotal, 95);
   });
 
+  it("it can chain multiple operations together", function(){
+    calculator.previousTotal = 7;
+    calculator.operatorClick("+");
+    assert.equal(calculator.newTotal, true);
+  });
+
 });
